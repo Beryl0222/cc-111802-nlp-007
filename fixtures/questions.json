@@ -1,0 +1,144 @@
+{
+  "questions": [
+    {
+      "question_id": "fraction-compare",
+      "revision": 1,
+      "source": "school-synthetic",
+      "observed_at": "2026-11-18T09:00:00Z",
+      "objective": "同分母分数大小比较",
+      "stem": "比较 3/7 和 5/7 的大小，并说明理由。",
+      "context": "教研演练",
+      "difficulty": "基础",
+      "tags": ["分数", "比较"],
+      "conditions": [
+        {"condition_id": "denominator-equal", "text": "两个分数分母相同", "value": "same"},
+        {"condition_id": "range", "text": "分数在 0 到 1 之间", "value": "0..1"}
+      ],
+      "answer_bases": [
+        {
+          "basis_id": "conclusion-main",
+          "conclusion": "3/7 < 5/7",
+          "evidence": "同分母分数比较分子，分子大的分数大。",
+          "condition_ids": ["denominator-equal", "range"]
+        }
+      ]
+    },
+    {
+      "question_id": "fraction-compare",
+      "revision": 2,
+      "source": "school-synthetic",
+      "observed_at": "2026-11-18T09:10:00Z",
+      "objective": "同分母分数大小比较",
+      "stem": "请比较 3/7 与 5/7 的大小关系，并说明理由。",
+      "context": "教研演练",
+      "difficulty": "基础",
+      "tags": ["分数", "比较"],
+      "conditions": [
+        {"condition_id": "denominator-equal", "text": "两个分数分母一样", "value": "same"},
+        {"condition_id": "range", "text": "分数在 0 到 1 之间", "value": "0..1"}
+      ],
+      "answer_bases": [
+        {
+          "basis_id": "conclusion-main",
+          "conclusion": "3/7 < 5/7",
+          "evidence": "同分母分数比较分子，分子大的分数大。",
+          "condition_ids": ["denominator-equal", "range"]
+        }
+      ]
+    },
+    {
+      "question_id": "fraction-compare-adaptation",
+      "revision": 1,
+      "source": "school-synthetic",
+      "observed_at": "2026-11-18T09:20:00Z",
+      "objective": "同分母分数大小比较",
+      "stem": "比较 3/7 和 5/9 的大小，并说明理由。",
+      "context": "课堂练习",
+      "difficulty": "提高",
+      "tags": ["分数", "比较", "改编"],
+      "derived_from": {"question_id": "fraction-compare", "revision": 1},
+      "conditions": [
+        {"condition_id": "denominator-equal", "text": "两个分数分母不同", "value": "different"},
+        {"condition_id": "range", "text": "分数在 0 到 1 之间", "value": "0..1"}
+      ],
+      "answer_bases": [
+        {
+          "basis_id": "conclusion-main",
+          "conclusion": "3/7 < 5/7",
+          "evidence": "同分母分数比较分子，分子大的分数大。",
+          "condition_ids": ["denominator-equal", "range"],
+          "source_basis_id": "conclusion-main"
+        }
+      ]
+    },
+    {
+      "question_id": "fraction-compare-context",
+      "revision": 1,
+      "source": "school-synthetic",
+      "observed_at": "2026-11-18T09:30:00Z",
+      "objective": "分数在生活情境中的表达",
+      "stem": "请比较 3/7 与 5/7 的大小关系，并说明理由。",
+      "context": "综合实践",
+      "difficulty": "基础",
+      "tags": ["分数", "表达"],
+      "conditions": [
+        {"condition_id": "denominator-equal", "text": "两个分数分母相同", "value": "same"},
+        {"condition_id": "range", "text": "分数在 0 到 1 之间", "value": "0..1"}
+      ],
+      "answer_bases": [
+        {
+          "basis_id": "conclusion-main",
+          "conclusion": "3/7 < 5/7",
+          "evidence": "同分母分数比较分子，分子大的分数大。",
+          "condition_ids": ["denominator-equal", "range"]
+        }
+      ]
+    },
+    {
+      "question_id": "unit-price",
+      "revision": 1,
+      "source": "school-synthetic",
+      "observed_at": "2026-11-18T09:40:00Z",
+      "objective": "单价、数量与总价",
+      "stem": "3 本练习本共 12 元，每本多少元？",
+      "context": "教研演练",
+      "difficulty": "基础",
+      "tags": ["除法"],
+      "conditions": [
+        {"condition_id": "uniform-price", "text": "每本价格相同"}
+      ],
+      "answer_bases": [
+        {
+          "basis_id": "conclusion-main",
+          "conclusion": "每本 4 元",
+          "evidence": "总价除以数量等于单价。",
+          "condition_ids": ["uniform-price"]
+        }
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "review_id": "review-fraction-compare-1",
+      "question_id": "fraction-compare",
+      "revision": 1,
+      "reviewer": "教研组甲",
+      "decision": "approved",
+      "notes": "条件与依据一致",
+      "reviewed_at": "2026-11-18T09:05:00Z",
+      "carry_forward": true,
+      "confirmed_basis_ids": ["conclusion-main"]
+    },
+    {
+      "review_id": "review-fraction-compare-context-1",
+      "question_id": "fraction-compare-context",
+      "revision": 1,
+      "reviewer": "教研组乙",
+      "decision": "approved",
+      "notes": "按生活表达目标复核",
+      "reviewed_at": "2026-11-18T09:35:00Z",
+      "carry_forward": true,
+      "confirmed_basis_ids": ["conclusion-main"]
+    }
+  ]
+}
